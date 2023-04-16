@@ -1,0 +1,21 @@
+ion-card{
+  width: 400px;
+  height: 300px;
+  //overflow:visible;
+  background-color: rosybrown;
+  border-color: black;
+  border-radius: 10px;
+  box-shadow: inset;
+  color: black;
+  //margin-left: 100px;
+  
+}
+
+//make the image centred and use font Hellene make the background color of the card rose
+ion-card-content{
+  text-align: center;
+  font-family: 'Helvetica';
+  color: var(--ion-color-rose);
+}
+
+

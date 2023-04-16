@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Feedback Form</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <!-- <ion-label>Feedback</ion-label> -->
+    <ion-textarea [(ngModel)]="feedbackText" placeholder="Enter your feedback"></ion-textarea>
+  </ion-item>
+  <ion-button expand="block" (click)="showAlert()">Submit</ion-button>
+</ion-content>
+
+<ion-footer [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Visit us @insta.com
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>

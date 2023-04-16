@@ -1,17 +1,106 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Tab 1
+      Museum Collections
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+
   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
+    <ion-title>
+      The Sculptures you may find !
+    </ion-title>
+
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-list scroll>
+    <ion-card>
+      <img src="https://i.pinimg.com/200x/6f/b7/42/6fb74298e4648424558eb661cb0bd4d8.jpg"/>
+      <ion-card-header>
+        <ion-card-title>
+          Ashoka Chakra
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content style="display: flex; justify-content: center;">
+        The most celebrated of the Ashokan pillars is the one erected at Sarnath.
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+
+  <ion-list scroll>
+    <ion-card>
+      <img src="https://i.pinimg.com/236x/c1/97/8a/c1978a75f0415ff4a0ef8d5a02a3913e--india-art-stone-sculpture.jpg"/>
+      <ion-card-header>
+        <ion-card-title>
+          Harrapan Women Sculpture
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        The most celebrated of statues from the Harappan CIVILIZATION
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+  <ion-list scroll>
+    <ion-card>
+      <img src="https://img.freepik.com/premium-photo/ancient-roman-sculpture-3d_691560-842.jpg?auto=format&h=200"/>
+      <ion-card-header>
+        <ion-card-title>
+          Roman Sculpture
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        A Roman Sculpture from 632 BC.
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+  <ion-list scroll>
+    <ion-card>
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0QEBAQEBEREBAWEAoNEBYWCxUQEBASIBEYIiAdGR8YKCogGiYxJx8fJTEhMSksLy8xIys0ODMsNyktOisBCgoKDg0OExAPFTAZFRkrNzc3NzAuMi0rKzAuNzc4LS0rNystKzIrLSs3MCsrMjMrKysrKystKysrKystKystLf/AABEIAMgAyAMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAQYEBQcDAv/EAEEQAAIBAgMEBwMKBAUFAAAAAAECAAMRBBIhBQYxQRMiUWFxgZFSobEUIzIzQnKTssHRByRi4RY0Q1NzFSWio/H/xAAYAQEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EACIRAQACAQUBAQADAQAAAAAAAAABAhEDEiExQVEyIkJDE//aAAwDAQACEQMRAD8A7jERAREQEiIgIiTAiIiAiYm1cQadGpUUXZUcqO08pQq+2cc2j1bL1iBkse69rSlrRVatcukRKXu/tLFtXXpKoakQFy21vbvl0k1tmMomMEREsgiIgIiICTIkwEREBERAREQERECIkxAiJMQIiTEDSb2VWWhYfadVPoZS3pqGVLEk2F/KXjekD5LVci+QLVHiDKbUqXZXXUEBgfLvlLRlarLwKBQWUEFWHxl8U6ekqWzFDVEUj6TAkdwFz8JbpNYwSRJkGWVIiICIiAkyJMBERAREQEREBERAiJMQIiJMCJhY7a2Gom1WoFPG1iT7phbwbRdMlGmbO4YlvZWU+vgKDElgWa56zMSb375SbT4tEfW/2/vBhq2GqU6TF3cKAOjYC173va0q9CgQFGYiwUEeU+uhZO8C9jb42+M+6ONQ2BBU8r9ZT4ESm6c8r444bnYzZcVQ10KVePM2/wDkugIM5znZxZlUgcLPce8TY7L2jUoWC/V80+yNdSL8JNbRlE1yu0T4oVVdQym4IBE+5qzIiICIiAkyJMBERAREQEREBERASIiAiIgUnbdYtjXA4LTye4fvK5tnaPydQ7KxTMoa2pAvN/Us2JxL/wBTfH+0r29oHydQftVUEytMxVpHxscNVV0DqQykAgz5fBU21GhPG3PxBmFssDoQBpbSZmHzdsTESPSnQKmxN+w85sKdBbG/AXPumMy6gzKZSFBvcXUH1l4rCMytmyT8zT8Db1M8t4MTWpYXEVaAQ1UpValMO1kzBb9Y9k9MFUVKCsxCqqszEmyqBe5JlM3ip19sUKgpP8mwKXdKjgqcXUANjbTLTB7eOkWnCq07p43E4jB4etiUWnWemruq3y68OPDwm3nMdgb04x3p4bFfy+Lpqop570qFdbC7PfW9rWAHPvtOgbM2kldbrdWsGKMMrgXNiRxF+Uit4ngmGdERLoJMiTAREQEREBERAREQESIgTIJiIHO8G5PyluJNRh7zKpv7jTT+RqdAz1y3llt8ZcNjlG+UlOBruw+7c2lJ/i5hjlw7dnS/EfuJjfiravbZ7GqjLbkRebGm+s0W7lNmpUyTqQp903SpY6xHSs9tirCw8Z64+rkpZh7SfGYvSZQOqzXZV05d5vymdiKBqUmVTZrdU9/KX8nCPWNTx4x/R4dmK4SkDVxhvZXINwhPAjVdO/um9xNVmy9VaaKA9Gm3VSkg4Vaw5f0p+v0afsnbGDwSrQqMxxD1Q5soyrUzcWzW7bW98tdPE0yM7FQ1w6h/qy9tajE6ta1gvK3mOXT1c9rWrjprN4NgYfFJ1rpXAestVmyVLf7lY26o9lP7gYOwNsCg6jaLNSqJ1qbimwbFadXOLZmNuA/WbSpj6Iu7E1FvnRD9OvUv9ZWPID7K8vS33sPDUsZX6fEDpqqqClz83SGa4Cjx+HdNMRNuO0eNlsDe2ni8TWwwoV6TU0SpmqKoDgnuJt5yxyMo85M6IyzJMiTJCIiAiIgIiICIiAiJECYkRA5dg8QmF2nVwnCmyqi/ezHL+o85rv4qUVfDqyut6fTXHM3K8PT3z620pbbVY8lCn0YzG21iRWoYpKgDNkIQ5dTqCNZheeJhtXuH3uhUD4Si1vsAHxBtNq7g6cDNbuJrgqY7M6++bmphsw00PEHsl/IVnswtXlNpRbS80FOuVfIQc17G029N9LHQ9nOTWYRMK7tDAUxjTc0EFUKzPUqJnpqWucgJ0ubi9ufGb7Zf/UcQ9SnRXCNhkOQOzu4Vrm4A0N9dSNJjbapIWoXQM5FRQ2UdUAg8/GWP+H+HWnh3C86jOe0kzn/5Vm+JWmZ25Ytfcp6i2fEAkkE2o5VXX7IB9/Hvlh2LspMMhVesxIZ2tYsbTYxOitK16hnNpkiIl0EmRJgIiICIiAiIgIiIERJkQEREDlWMT/uGKfvt/wCTTR4ulfN90fCb7EH5+u3aw+JmmxQsWHYqzi1O3TVkbhn+WP33EslI62lR3FrjLXp81qBx4Ef2lnpOc06q/mJZT3Kvb20KNLE0cRUZkBUopAY/OAi2izeYOuj9ZeLZWbS1zbWeO9dJW+TXF+s7ei/3jZg1lMYtKfGx2iovQvyZz7pv9yD8wfvD4Su7RqL0lFSQLBnOvLhN/uGp+TknW7A93CP9CfyssSYmzJERJgRJiICIiAiIgIiICIiBESZEBPPENZGPYrH3T1mLtBXNKoEF2yPlF7XNuEDlrYtS2IJVhZlUki49012IcFwQbgqRceMxd4xilNlY0WNamWAN7ksBY3ntQw+VsvG4DE2txM4LuqGu3cc0cYVPB89E+tx7xbzl5bQiUPa6OrhkBz9JQy27c0vlRP0nVp/llfvLX701wHwan7S4u3lkmVstefhMHeZ0NTDU+LpTrVPBWZQPymbLYwBUG/ZeP7I8fO28A9Riy8QqqLce22stW4rKcIAOTsp7jlEqr1VV2frcHqk5vpDkBL7sShkoU9LFlFRvvHWVpGbzKbT/ABwz4kxN2SIiTAiTEQEREBERAREQERECIiICIiBybfGhmxB1GtamQOf1s1lV8tRb8ww87zb7fVA71mP+rTLH2VDD0lZ2/iLdG6EEZgwIOh5zj1I5dFW+2ZhBUq9K2qoBb/k7fL9psalQEm5souzHsAExtk6YamebBqh8zebLZOAFdxTa9nDh7cQltfCdFeKwztzLn+E2g+JxuIrEEIVpKgP2UHAfr5y47GvkqW4ZW+ExMVsbD4fFV6VFSEzKou2Y/QF9T33mdsRbUa33TM4z6tOPGLRRgtZASwyIyrxy9YXt5TqeDPzdP7lP8s5g11K1VNiCot2i/CdSoEZVtoMq+WknR9RqPuIibsiIiAkyJMBERAREQEREBERASIiAkyIgVre3dlcUrPTstUoUbq/WLxA8RI3Q3cp4fC5K1NWd8/SBlDjLmNl15SzRK7YzlO6cYc+2vh1SoyIoVVZlUAWAF9AJad29nilTDkddwD4LyH6yrbXxCNjFp31qVSq2Ots+W86AqgCw4WAEnMSS5xvRTyY6r2EI/qgnxQOTDNyLFVHrNhvrT/mge2kn5jNHtmrkFCmOOrgdrcB+szvxlevOHvhabVai0l1uylu7WdORbADsAEpG6NFVrIh1ezVHPfl0l5jSriDUnlMSImrMkyIgTEiTAREQEREBERAREQEiIgTEiIEzwxtcU6bueQJ8TyntNRvRiAmHOoF2VRc2udTb3QKnhcSDtGgpUEE5gSNQ19J0OcdbE0kro4NbOrqwZTmGjHy7PfOs4PFpUppUBADKranhcTOls5XtGFG/iBTZ8QvR1OjYJTzGwPM6WPiDNFVJbFUVY36iEHkdOMzNvYvpMU7cVLVM2o4CwXn2ATWstN3DXamACBZL2PkZlqcyvThaNyw3yliws16t5fZz7Yu1KdN1qZhUYjLppmuOcvqVQQNQOH2prp9KX7esT5DA8CD5yZooSZEQJiRJgIiICIiAiIgIiIERJkQEx9oYnoqbVLXtl087TImDtz/L1PBfzCBW8XjzUYtcrfLoDoNJgVMQ3tN6wxHGeDCVmV4h8Vq5vqze6fIrf1P6ieGI4+k+FE55ty0wy2xaiwLPckAajUz1FbvP4gmpxCMWRgL5WViLz0XCJxIN/wDk/aWrP1Ew2fSd5/EEgYle1vWaoUluDkN9bXq8JkItgB2WkWt8Iht8DtA02DqSTqNdRw7pdNm4g1aSOeJBv6mc3R5f93f8tS8H/OZfTtmVbw2URE2ZkmRJgIiICIiAiIgIiICIiAnnVpqwKsAQeIIuDEQMZtlYY6dEvpaeTbDwh/0/R2/eIjBl4Pu1gzxQ/it+8gbsYP2G/EaIldsfDdKTuzg/Yb8Vo/wzg/Yb8VoiNsfE5kG7OD9hvxW/eT/hrBewfxW/eIkbY+I3Sld28F/t/wDtf95scPQSmoRBZRwF729ZMS0ViOjMy9IiJISYiAiIgIiIH//Z"/>
+      <ion-card-header>
+        <ion-card-title>
+          Greek Sculpture
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        A Greek Sculpture apparently from Alexander the Great Era
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+  <ion-list scroll>
+    <ion-card>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLzR5peXvG01zPENMk3rJUUZVYTgJuQuLZbg&usqp=CAU"/>
+      <ion-card-header>
+        <ion-card-title>
+         Mayan Sculpture
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Mayan works from El Paso 1123 AD.
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+
+ <!-- <cdk-virtual-scroll-viewport itemSize="56">
+  <ion-list>
+    <ion-item *cdkVirtualFor="let item of coll">
+      <ion-avatar slot="start">
+        <img src="https://loremflickr.com/100/100"/>
+      </ion-avatar>
+      <ion-label>
+          {{item}}
+      </ion-label>
+    </ion-item>
+   </ion-list>
+
+ </cdk-virtual-scroll-viewport> -->
+
 </ion-content>
+
+<ion-footer [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Visit us @insta.com
+    </ion-title>
+  </ion-toolbar>

@@ -7,8 +7,10 @@ import { ExploreContainerComponent } from '../explore-container/explore-containe
   templateUrl: 'tab3.page.html',
   styleUrls: ['tab3.page.scss'],
   standalone: true,
-  imports: [IonicModule, ExploreContainerComponent],
+  imports: [IonicModule, ExploreContainerComponent]
 })
 export class Tab3Page {
+
   constructor() {}
+
 }
